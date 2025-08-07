@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Brandsen Digital - La Fibra Más Épica de Argentina! 🔥</title>
+    <meta name="description" content="🎮 Internet ULTRA RÁPIDO que te vuela la cabeza! Gaming sin lag, streaming 8K, trabajo desde casa sin drama. ¡25 años conectando Brandsen! 🏆">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --primary: #0066CC;
+            --secondary: #FF6B35;
+            --accent: #00F5FF;
+            --success: #00FF94;
+            --warning: #FFD700;
+            --danger: #FF1744;
+            --dark: #1a1a2e;
+            --light: #eee;
+            --neon-blue: #00F5FF;
+            --neon-pink: #FF073A;
+            --neon-green: #39FF14;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        /* CURSOR PERSONALIZADO ÉPICO */
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, var(--neon-blue), transparent);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s ease;
+        }
+
+        .cursor-trail {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0.8;
+        }
+
+        /* BACKGROUND ANIMADO ÉPICO */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #0a0a0a);
+            overflow: hidden;
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .shape {
+            position: absolute;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) { width: 100px; height: 100px; top: 10%; left: 10%; animation-delay: 0s; }
+        .shape:nth-child(2) { width: 150px; height: 150px; top: 20%; right: 10%; animation-delay: 1s; }
+        .shape:nth-child(3) { width: 80px; height: 80px; bottom: 30%; left: 20%; animation-delay: 2s; }
+        .shape:nth-child(4) { width: 120px; height: 120px; bottom: 10%; right: 20%; animation-delay: 3s; }
+
+        /* HEADER FUTURISTA */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid var(--neon-blue);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(26, 26, 46, 0.98);
+            box-shadow: 0 0 30px var(--neon-blue);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            animation: glow-pulse 2s ease-in-out infinite alternate;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-blue);
+            background: rgba(0, 245, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .cta-phone {
+            background: linear-gradient(45deg, var(--secondary), var(--neon-pink));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .cta-phone:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 0 40px rgba(255, 107, 53, 0.8);
+        }
+
+        /* HERO SECTION ÉPICA */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 2rem 0;
+        }
+
+        .hero-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--neon-blue);
+            border-radius: 50%;
+            animation: particle-float 4s linear infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 8rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary), var(--neon-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-text 3s ease-in-out infinite;
+            text-shadow: 0 0 50px rgba(0, 245, 255, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            animation: slide-up 1s ease-out 0.5s both;
+        }
+
+        .speed-demo {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 2px solid var(--neon-blue);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .speed-demo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.2), transparent);
+            animation: scan 2s ease-in-out infinite;
+        }
+
+        .speed-meter {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            position: relative;
+            border: 8px solid rgba(0, 245, 255, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--neon-blue);
+            animation: speed-rotate 2s linear infinite;
+        }
+
+        .speed-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--neon-blue);
+            animation: number-pulse 1s ease-in-out infinite;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--secondary), var(--neon-pink));
+            color: white;
+            box-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 10px 50px rgba(255, 107, 53, 0.8);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: var(--neon-blue);
+            color: #000;
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 10px 50px rgba(0, 245, 255, 0.8);
+        }
+
+        /* SECCIÓN PLANES INTERACTIVA */
+        .plans {
+            padding: 100px 2rem;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .plans-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .plan-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 3rem;
+            border: 2px solid transparent;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .plan-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary), var(--neon-green));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-20px) scale(1.02);
+            border-color: var(--neon-blue);
+            box-shadow: 0 20px 60px rgba(0, 245, 255, 0.4);
+        }
+
+        .plan-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .plan-popular {
+            transform: scale(1.05);
+            border-color: var(--secondary);
+            box-shadow: 0 0 50px rgba(255, 107, 53, 0.5);
+        }
+
+        .plan-popular::after {
+            content: '🔥 MÁS POPULAR 🔥';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, var(--secondary), var(--neon-pink));
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            animation: popular-bounce 2s ease-in-out infinite;
+        }
+
+        .plan-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--neon-blue);
+            margin-bottom: 1rem;
+        }
+
+        .plan-speed {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--neon-green), var(--neon-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            animation: speed-glow 2s ease-in-out infinite alternate;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features li {
+            padding: 0.8rem 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            animation: feature-slide 0.5s ease-out;
+        }
+
+        .plan-features li::before {
+            content: '⚡';
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            animation: icon-spin 2s linear infinite;
+        }
+
+        .plan-cta {
+            width: 100%;
+            background: linear-gradient(45deg, var(--secondary), var(--neon-pink));
+            color: white;
+            border: none;
+            padding: 1.5rem;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .plan-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.6);
+        }
+
+        .plan-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.6s ease;
+        }
+
+        .plan-cta:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* SPEED TEST INTERACTIVO */
+        .speed-test {
+            padding: 100px 2rem;
+            background: linear-gradient(135deg, #16213e, #0f172a);
+            text-align: center;
+        }
+
+        .speed-test-widget {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 3rem;
+            border: 2px solid var(--neon-blue);
+        }
+
+        .speed-gauge {
+            width: 300px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            position: relative;
+            background: conic-gradient(from 180deg, #ff0000, #ffff00, #00ff00);
+            border-radius: 150px 150px 0 0;
+            overflow: hidden;
+        }
+
+        .speed-needle {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            height: 140px;
+            background: white;
+            transform-origin: bottom center;
+            transform: translateX(-50%) rotate(-90deg);
+            transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .test-button {
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            border: none;
+            color: white;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: test-pulse 2s ease-in-out infinite;
+        }
+
+        .test-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 50px rgba(0, 245, 255, 0.8);
+        }
+
+        /* GAMING SECTION */
+        .gaming-section {
+            padding: 100px 2rem;
+            background: linear-gradient(135deg, #0f172a, #1a1a2e);
+        }
+
+        .gaming-demo {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .gaming-visual {
+            position: relative;
+            height: 400px;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            border-radius: 20px;
+            border: 2px solid var(--neon-blue);
+            overflow: hidden;
+        }
+
+        .ping-display {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--neon-green);
+            animation: ping-update 1s ease-in-out infinite;
+        }
+
+        .game-character {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            border-radius: 50%;
+            animation: character-move 3s ease-in-out infinite;
+        }
+
+        /* TESTIMONIOS ANIMADOS */
+        .testimonials {
+            padding: 100px 2rem;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+        }
+
+        .testimonials-slider {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            text-align: center;
+            border-radius: 25px;
+            border: 2px solid var(--neon-blue);
+            margin-bottom: 2rem;
+            transition: all 0.5s ease;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.3);
+        }
+
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            animation: avatar-pulse 2s ease-in-out infinite;
+        }
+
+        .stars {
+            font-size: 2rem;
+            color: var(--warning);
+            margin-bottom: 1rem;
+            animation: star-twinkle 1.5s ease-in-out infinite;
+        }
+
+        /* CONTACTO INTERACTIVO */
+        .contact {
+            padding: 100px 2rem;
+            background: linear-gradient(135deg, #16213e, #0f172a);
+        }
+
+        .contact-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            border-color: var(--neon-blue);
+            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.4);
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--neon-blue), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: icon-float 3s ease-in-out infinite;
+        }
+
+        /* WHATSAPP FLOTANTE ÉPICO */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            text-decoration: none;
+            z-index: 1000;
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.5);
+            animation: whatsapp-bounce 2s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 0 50px rgba(37, 211, 102, 0.8);
+        }
+
+        /* ANIMACIONES ÉPICAS */
+        @keyframes glow-pulse {
+            0%, 100% { text-shadow: 0 0 20px var(--neon-blue); }
+            50% { text-shadow: 0 0 40px var(--neon-blue), 0 0 60px var(--secondary); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(255, 107, 53, 0.8); }
+        }
+
+        @keyframes rainbow-text {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+
+        @keyframes slide-up {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        @keyframes speed-rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes number-pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes particle-float {
+            0% { opacity: 0; transform: translateY(100vh); }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; transform: translateY(-100vh); }
+        }
+
+        @keyframes popular-bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        @keyframes speed-glow {
+            0% { text-shadow: 0 0 20px var(--neon-green); }
+            100% { text-shadow: 0 0 40px var(--neon-green), 0 0 60px var(--neon-blue); }
+        }
+
+        @keyframes feature-slide {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes icon-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes test-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes ping-update {
+            0%, 100% { color: var(--neon-green); }
+            50% { color: var(--warning); }
+        }
+
+        @keyframes character-move {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-20px); }
+        }
+
+        @keyframes avatar-pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 245, 255, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(0, 245, 255, 0.8); }
+        }
+
+        @keyframes star-twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes icon-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes whatsapp-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .gaming-demo {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .plans-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .speed-demo {
+                padding: 1rem;
+            }
+        }
+
+        /* EFECTOS DE SONIDO (simulados) */
+        .sound-effect {
+            position: relative;
+        }
+
+        .sound-effect::after {
+            content: '♪';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            opacity: 0;
+            color: var(--neon-blue);
+            font-size: 1.5rem;
+            animation: sound-note 0.5s ease-out;
+        }
+
+        @keyframes sound-note {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0; transform: scale(1) translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Background animado -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Header futurista -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#inicio" class="logo">🚀 BRANDSEN DIGITAL</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">🏠 Inicio</a></li>
+                <li><a href="#planes">⚡ Planes</a></li>
+                <li><a href="#speedtest">🎮 Speed Test</a></li>
+                <li><a href="#gaming">🎯 Gaming</a></li>
+                <li><a href="#testimonios">💬 Reviews</a></li>
+                <li><a href="#contacto">📞 Contacto</a></li>
+            </ul>
+            <a href="tel:2223528209" class="cta-phone">📞 LLAMAR YA!</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section ÉPICA -->
+    <section class="hero" id="inicio">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">INTERNET QUE TE VUELA LA CABEZA! 🚀</h1>
+            <p class="hero-subtitle">
+                🔥 Fibra óptica ULTRA RÁPIDA que hace que tu vecino llore de envidia 
+                💪 Gaming sin lag • Streaming 8K • Work from home SIN DRAMA
+            </p>
+            
+            <div class="speed-demo">
+                <h3>🌪️ VELOCIDAD EN TIEMPO REAL:</h3>
+                <div class="speed-meter">
+                    <div class="speed-number" id="speed-counter">200</div>
+                </div>
+                <p>⚡ MBPS DE PURA VELOCIDAD ⚡</p>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#planes" class="btn btn-primary sound-effect">
+                    🎯 VER PLANES ÉPICOS
+                </a>
+                <a href="#speedtest" class="btn btn-secondary sound-effect">
+                    🎮 PROBAR VELOCIDAD
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes Section INTERACTIVA -->
+    <section class="plans" id="planes">
+        <div class="section-title">
+            <h2>🎮 PLANES QUE DAN PODERES SOBRENATURALES</h2>
+            <p>Elegí tu superpoder digital. Todos incluyen TV HD + instalación GRATIS! 🎁</p>
+        </div>
+
+        <div class="plans-container">
+            <div class="plan-card" data-plan="basico">
+                <div class="plan-name">🏠 PLAN CASA</div>
+                <div class="plan-speed" data-speed="50">50MB</div>
+                <div class="plan-price">$29.500<small>/mes</small></div>
+                <ul class="plan-features">
+                    <li>Internet que nunca falla</li>
+                    <li>TV HD con todos los canales</li>
+                    <li>Netflix sin bufering</li>
+                    <li>Work from home perfecto</li>
+                    <li>Instalación GRATIS 🎁</li>
+                </ul>
+                <button class="plan-cta sound-effect" onclick="selectPlan('Casa', '50MB', '$29.500')">
+                    🚀 QUIERO ESTE PODER!
+                </button>
+            </div>
+
+            <div class="plan-card plan-popular" data-plan="gamer">
+                <div class="plan-name">🎮 PLAN GAMER</div>
+                <div class="plan-speed" data-speed="100">100MB</div>
+                <div class="plan-price">$33.400<small>/mes</small></div>
+                <ul class="plan-features">
+                    <li>Gaming sin lag GARANTIZADO</li>
+                    <li>Streaming 4K simultáneo</li>
+                    <li>Zoom calls + Netflix + Gaming</li>
+                    <li>Velocidad que asusta</li>
+                    <li>Soporte VIP 👑</li>
+                </ul>
+                <button class="plan-cta sound-effect" onclick="selectPlan('Gamer', '100MB', '$33.400')">
+                    ⚡ DAME ESTE PODER!
+                </button>
+            </div>
+
+            <div class="plan-card" data-plan="bestia">
+                <div class="plan-name">👑 PLAN BESTIA</div>
+                <div class="plan-speed" data-speed="200">200MB</div>
+                <div class="plan-price">$37.500<small>/mes</small></div>
+                <ul class="plan-features">
+                    <li>BESTIA TOTAL sin límites</li>
+                    <li>Toda la casa conectada</li>
+                    <li>Gaming profesional</li>
+                    <li>Streaming 8K ready</li>
+                    <li>IP fija incluida</li>
+                </ul>
+                <button class="plan-cta sound-effect" onclick="selectPlan('Bestia', '200MB', '$37.500')">
+                    👑 SOY UNA BESTIA!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speed Test Interactivo -->
+    <section class="speed-test" id="speedtest">
+        <div class="section-title">
+            <h2>🌪️ PROBÁ TU VELOCIDAD ACTUAL</h2>
+            <p>¿Tu internet actual es una tortuga? ¡Descubrilo!</p>
+        </div>
+
+        <div class="speed-test-widget">
+            <h3>⚡ TEST DE VELOCIDAD ÉPICO</h3>
+            <div class="speed-gauge">
+                <div class="speed-needle" id="speed-needle"></div>
+            </div>
+            <div id="speed-result">
+                <h4>Tu velocidad actual: <span id="current-speed">? MB</span></h4>
+                <p id="speed-message">¡Hacé click para descobrir la verdad!</p>
+            </div>
+            <button class="test-button sound-effect" onclick="runSpeedTest()">
+                🚀 PROBAR MI INTERNET
+            </button>
+        </div>
+    </section>
+
+    <!-- Gaming Section -->
+    <section class="gaming-section" id="gaming">
+        <div class="section-title">
+            <h2>🎮 GAMING SIN LAG = VICTORIA ASEGURADA</h2>
+            <p>Con nuestra fibra óptica, ser noob ya no es una opción</p>
+        </div>
+
+        <div class="gaming-demo">
+            <div class="gaming-visual">
+                <div class="ping-display" id="ping-display">PING: 5ms ⚡</div>
+                <div class="game-character">🎮</div>
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                    <h3>🏆 DOMINIO TOTAL</h3>
+                    <p>Sin lag • Sin excusas • Solo victorias</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>🎯 POR QUÉ LOS GAMERS NOS ELIGEN:</h3>
+                <ul style="list-style: none; font-size: 1.2rem; line-height: 2;">
+                    <li>⚡ Ping ultra bajo (5-15ms)</li>
+                    <li>🚀 Velocidad simétrica real</li>
+                    <li>🎮 Gaming + streaming simultáneo</li>
+                    <li>💪 Fibra óptica directa</li>
+                    <li>🏆 25 años de experiencia</li>
+                    <li>👑 Soporte gamer 24/7</li>
+                </ul>
+                <button class="btn btn-primary sound-effect" onclick="gameMode()">
+                    🎮 ACTIVAR MODO BESTIA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Animados -->
+    <section class="testimonials" id="testimonios">
+        <div class="section-title">
+            <h2>💬 LO QUE DICEN LOS VECINOS</h2>
+            <p>Reviews reales de gente que ya tiene superpoderes digitales</p>
+        </div>
+
+        <div class="testimonials-slider">
+            <div class="testimonial">
+                <div class="testimonial-avatar">🧔</div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p style="font-size: 1.3rem; margin-bottom: 1rem;">
+                    "HERMANO! Desde que tengo Brandsen Digital soy IMPARABLE en el Call of Duty. 
+                    Ping de 8ms, nunca más lag. Mi KDA se fue a la estratósfera! 🚀"
+                </p>
+                <strong>Carlos "ElPro" Rodríguez - Loma Verde</strong>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-avatar">👩</div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p style="font-size: 1.3rem; margin-bottom: 1rem;">
+                    "Trabajo desde casa, los chicos hacen zoom classes, vemos Netflix 4K y TODO AL MISMO TIEMPO. 
+                    Esta fibra óptica es MAGIA PURA! ✨"
+                </p>
+                <strong>María "MultitaskQueen" González - Brandsen Centro</strong>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-avatar">👨</div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p style="font-size: 1.3rem; margin-bottom: 1rem;">
+                    "Stream en Twitch con 1080p 60fps SIN DRAMA. Antes era imposible, ahora soy el rey del streaming. 
+                    Brandsen Digital = GAME CHANGER! 👑"
+                </p>
+                <strong>Diego "StreamKing" Fernández - Miralagos</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Interactivo -->
+    <section class="contact" id="contacto">
+        <div class="section-title">
+            <h2>📞 CONECTATE CON LOS JEFES!</h2>
+            <p>¿Listo para cambiar tu vida digital? ¡Hablemos!</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card sound-effect" onclick="contactAction('phone')">
+                <div class="contact-icon">📞</div>
+                <h3>LLAMADA DIRECTA</h3>
+                <p><strong>2223 52-8209</strong></p>
+                <p>Lun-Vie 9-17hs</p>
+                <small>Bot inteligente te conecta al instante</small>
+            </div>
+
+            <div class="contact-card sound-effect" onclick="contactAction('whatsapp')">
+                <div class="contact-icon">💬</div>
+                <h3>WHATSAPP ÉPICO</h3>
+                <p><strong>Respuesta inmediata</strong></p>
+                <p>24/7 disponible</p>
+                <small>El método más rápido para consultas</small>
+            </div>
+
+            <div class="contact-card sound-effect" onclick="contactAction('location')">
+                <div class="contact-icon">📍</div>
+                <h3>CUEVA SECRETA</h3>
+                <p><strong>Mitre 742</strong></p>
+                <p>Coronel Brandsen</p>
+                <small>Vení a conocer la matrix</small>
+            </div>
+
+            <div class="contact-card sound-effect" onclick="contactAction('email')">
+                <div class="contact-icon">📧</div>
+                <h3>EMAIL NINJA</h3>
+                <p><strong>info@brandsendigital.com.ar</strong></p>
+                <p>Respuesta en 24hs</p>
+                <small>Para consultas técnicas avanzadas</small>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <h3 style="margin-bottom: 2rem;">🚀 ZONA DE COBERTURA ÉPICA:</h3>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 1.2rem;">
+                <span>🏠 Brandsen Centro</span>
+                <span>🌳 Jeppener</span>
+                <span>🏔️ Loma Verde</span>
+                <span>🏘️ Gómez</span>
+                <span>🌲 Bosquecitos</span>
+                <span>🏞️ Miralagos</span>
+                <span>🎯 Altamirano</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Flotante ÉPICO -->
+    <a href="https://wa.me/5492223528209?text=🚀 QUIERO INTERNET ÉPICO! Contame sobre los planes de Brandsen Digital" 
+       class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+    <!-- JavaScript ÉPICO -->
+    <script>
+        // Variables globales
+        let particles = [];
+        let cursorTrails = [];
+        let currentTestimonial = 0;
+        
+        // Cursor personalizado épico
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.custom-cursor');
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            // Crear trail del cursor
+            createCursorTrail(e.clientX, e.clientY);
+        });
+
+        function createCursorTrail(x, y) {
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            trail.style.left = x + 'px';
+            trail.style.top = y + 'px';
+            document.body.appendChild(trail);
+            
+            setTimeout(() => {
+                trail.remove();
+            }, 500);
+        }
+
+        // Partículas épicas en el hero
+        function createParticles() {
+            const container = document.getElementById('particles');
+            
+            setInterval(() => {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                container.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 5000);
+            }, 300);
+        }
+
+        // Contador de velocidad épico
+        function animateSpeedCounter() {
+            const counter = document.getElementById('speed-counter');
+            let current = 0;
+            const target = 200;
+            const increment = target / 100;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                counter.textContent = Math.floor(current);
+            }, 30);
+        }
+
+        // Seleccionar plan épico
+        function selectPlan(name, speed, price) {
+            // Efectos visuales
+            document.body.style.background = 'linear-gradient(45deg, #FF6B35, #00F5FF)';
+            
+            setTimeout(() => {
+                document.body.style.background = '';
+            }, 500);
+            
+            // Mensaje épico
+            alert(`🚀 SELECCIONASTE EL PLAN ${name.toUpperCase()}! ${speed} por ${price}. 
+                   ¡Preparate para la velocidad de la luz! ⚡`);
+            
+            // Abrir WhatsApp con mensaje personalizado
+            const message = encodeURIComponent(
+                `🚀 QUIERO EL PLAN ${name.toUpperCase()}! 
+                ${speed} por ${price}/mes. 
+                Estoy listo para tener superpoderes digitales! ⚡🎮`
+            );
+            
+            window.open(`https://wa.me/5492223528209?text=${message}`, '_blank');
+        }
+
+        // Speed test épico
+        function runSpeedTest() {
+            const needle = document.getElementById('speed-needle');
+            const result = document.getElementById('current-speed');
+            const message = document.getElementById('speed-message');
+            const button = document.querySelector('.test-button');
+            
+            button.textContent = '⚡ ANALIZANDO...';
+            button.disabled = true;
+            
+            // Simular test realista
+            let currentSpeed = 0;
+            const finalSpeed = Math.floor(Math.random() * 50) + 10; // 10-60 MB
+            
+            const testInterval = setInterval(() => {
+                currentSpeed += Math.random() * 5;
+                if (currentSpeed >= finalSpeed) {
+                    currentSpeed = finalSpeed;
+                    clearInterval(testInterval);
+                    
+                    // Resultado épico
+                    result.textContent = finalSpeed + ' MB';
+                    
+                    if (finalSpeed < 25) {
+                        message.innerHTML = '🐌 TU INTERNET ES UNA TORTUGA! Con nosotros tendrías 200MB! 🚀';
+                        message.style.color = '#FF1744';
+                    } else if (finalSpeed < 50) {
+                        message.innerHTML = '😐 No está mal, pero con Brandsen Digital serías IMPARABLE! ⚡';
+                        message.style.color = '#FFD700';
+                    } else {
+                        message.innerHTML = '🤔 Está bien, pero ¿ya probaste nuestros 200MB? ¡ES OTRO NIVEL! 👑';
+                        message.style.color = '#00FF94';
+                    }
+                    
+                    button.textContent = '🚀 QUIERO MEJORAR MI INTERNET';
+                    button.disabled = false;
+                    button.onclick = () => {
+                        window.open('https://wa.me/5492223528209?text=🐌 Mi internet es lento! Quiero los 200MB de Brandsen Digital!', '_blank');
+                    };
+                }
+                
+                // Mover aguja
+                const angle = (currentSpeed / 100) * 180 - 90;
+                needle.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+                result.textContent = Math.floor(currentSpeed) + ' MB';
+            }, 100);
+        }
+
+        // Modo gaming épico
+        function gameMode() {
+            document.body.style.filter = 'hue-rotate(120deg)';
+            document.body.style.animation = 'rainbow-text 1s ease-in-out';
+            
+            alert('🎮 MODO BESTIA ACTIVADO! 👑 Ahora sos IMPARABLE en todos los juegos! ⚡');
+            
+            setTimeout(() => {
+                document.body.style.filter = '';
+                document.body.style.animation = '';
+            }, 2000);
+            
+            // Abrir WhatsApp modo gamer
+            const message = encodeURIComponent(
+                '🎮 QUIERO ACTIVAR MODO BESTIA! Necesito el internet más rápido para gaming. ¡Háblame de los planes! ⚡👑'
+            );
+            window.open(`https://wa.me/5492223528209?text=${message}`, '_blank');
+        }
+
+        // Acciones de contacto épicas
+        function contactAction(type) {
+            const actions = {
+                phone: () => {
+                    window.open('tel:2223528209');
+                },
+                whatsapp: () => {
+                    const message = encodeURIComponent('🚀 Hola! Quiero superpoderes digitales con Brandsen Digital! Contame todo sobre los planes épicos! ⚡');
+                    window.open(`https://wa.me/5492223528209?text=${message}`, '_blank');
+                },
+                location: () => {
+                    window.open('https://maps.app.goo.gl/3R2PPrDTP2AwdgPM7', '_blank');
+                },
+                email: () => {
+                    window.open('mailto:info@brandsendigital.com.ar?subject=🚀 Quiero Internet Épico!&body=Hola! Estoy listo para tener superpoderes digitales!');
+                }
+            };
+            
+            actions[type]();
+        }
+
+        // Efectos de sonido simulados
+        function playSound() {
+            // Agregar clase de efecto sonoro
+            event.target.classList.add('sound-effect');
+            setTimeout(() => {
+                event.target.classList.remove('sound-effect');
+            }, 500);
+        }
+
+        // Header scroll épico
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Navegación suave épica
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersección observer para animaciones
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    
+                    // Animar contadores de velocidad en las cards
+                    const speedElement = entry.target.querySelector('[data-speed]');
+                    if (speedElement) {
+                        const targetSpeed = parseInt(speedElement.dataset.speed);
+                        animateNumber(speedElement, targetSpeed);
+                    }
+                }
+            });
+        }, { threshold: 0.3 });
+
+        // Observar elementos para animación
+        document.querySelectorAll('.plan-card, .contact-card, .testimonial').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(50px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Animar números
+        function animateNumber(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + 'MB';
+            }, 30);
+        }
+
+        // Slider de testimonios automático
+        function autoSlideTestimonials() {
+            const testimonials = document.querySelectorAll('.testimonial');
+            setInterval(() => {
+                testimonials[currentTestimonial].style.opacity = '0.5';
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                testimonials[currentTestimonial].style.opacity = '1';
+                testimonials[currentTestimonial].scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center',
+                    inline: 'center'
+                });
+            }, 5000);
+        }
+
+        // Ping simulado para gaming
+        function updatePing() {
+            const pingDisplay = document.getElementById('ping-display');
+            setInterval(() => {
+                const ping = Math.floor(Math.random() * 10) + 5; // 5-15ms
+                pingDisplay.textContent = `PING: ${ping}ms ⚡`;
+                
+                if (ping < 10) {
+                    pingDisplay.style.color = 'var(--neon-green)';
+                } else {
+                    pingDisplay.style.color = 'var(--warning)';
+                }
+            }, 2000);
+        }
+
+        // Efectos de hover épicos en plan cards
+        document.querySelectorAll('.plan-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-20px) scale(1.02) rotate(2deg)';
+                card.style.boxShadow = '0 30px 60px rgba(0, 245, 255, 0.6)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+
+        // Efecto matrix en background
+        function createMatrixEffect() {
+            const chars = '01';
+            setInterval(() => {
+                const span = document.createElement('span');
+                span.textContent = chars[Math.floor(Math.random() * chars.length)];
+                span.style.position = 'fixed';
+                span.style.left = Math.random() * 100 + 'vw';
+                span.style.top = '-20px';
+                span.style.color = 'var(--neon-blue)';
+                span.style.fontSize = '20px';
+                span.style.opacity = '0.1';
+                span.style.pointerEvents = 'none';
+                span.style.zIndex = '-1';
+                span.style.animation = 'particle-float 4s linear forwards';
+                
+                document.body.appendChild(span);
+                
+                setTimeout(() => {
+                    span.remove();
+                }, 4000);
+            }, 100);
+        }
+
+        // Inicializar todo cuando carga la página
+        window.addEventListener('load', () => {
+            createParticles();
+            animateSpeedCounter();
+            autoSlideTestimonials();
+            updatePing();
+            createMatrixEffect();
+            
+            // Mensaje de bienvenida épico
+            setTimeout(() => {
+                if (Math.random() > 0.7) { // 30% de probabilidad
+                    alert('🚀 BIENVENIDO A LA EXPERIENCIA MÁS ÉPICA DE INTERNET! ¿Listo para cambiar tu vida digital? ⚡');
+                }
+            }, 3000);
+        });
+
+        // Easter eggs
+        let clickCount = 0;
+        document.addEventListener('click', () => {
+            clickCount++;
+            if (clickCount === 10) {
+                document.body.style.animation = 'rainbow-text 2s ease-in-out';
+                alert('🎉 EASTER EGG DESBLOQUEADO! ¡Sos un usuario épico! 🎮');
+                setTimeout(() => {
+                    document.body.style.animation = '';
+                }, 2000);
+            }
+        });
+
+        // Konami code
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+        
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.code);
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+            
+            if (JSON.stringify(konamiCode) === JSON.stringify(konamiSequence)) {
+                document.body.style.background = 'linear-gradient(45deg, #FF073A, #00F5FF, #39FF14)';
+                document.body.style.animation = 'rainbow-text 5s ease-in-out infinite';
+                alert('🎮 KONAMI CODE ACTIVATED! ¡MODO DESARROLLADOR DESBLOQUEADO! 👑');
+            }
+        });
+    </script>
+</body>
+</html>
