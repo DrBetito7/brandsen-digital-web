@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandsen Digital - Fibra Óptica en tu Hogar | Internet + TV en Coronel Brandsen</title>
+    <meta name="description" content="Fibra óptica en tu hogar en Coronel Brandsen. Internet + TV desde $29.500. Más de 25 años conectando vecinos. Instalación sin cargo en promoción.">
+    <meta name="keywords" content="internet brandsen, fibra optica brandsen, internet coronel brandsen, tv cable brandsen, brandsen digital">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Brandsen Digital - Fibra Óptica en tu Hogar">
+    <meta property="og:description" content="Internet + TV desde $29.500. Más de 25 años conectando a nuestros vecinos en Brandsen.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #0066CC;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0066CC;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .phone {
+            background: #25D366;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .phone:hover {
+            transform: scale(1.05);
+        }
+
+        /* Promotion Banner */
+        .promo-banner {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8A4C 100%);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .promo-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,0 0,100"/></svg>');
+        }
+
+        .promo-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-banner h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .promo-price {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0.5rem 0;
+        }
+
+        .promo-features {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0066CC 0%, #004A99 50%, #FF6B35 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.05)"><polygon points="1000,0 1000,100 0,100"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: #FF6B35;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Coverage Check */
+        .coverage-check {
+            background: #f8fafc;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .coverage-form {
+            background: white;
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: #0066CC;
+        }
+
+        /* Plans Section */
+        .plans {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #0066CC;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .plan-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease-out;
+            border: 2px solid transparent;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .plan-popular {
+            border: 3px solid #FF6B35;
+        }
+
+        .plan-popular::before {
+            content: 'MÁS POPULAR';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: #FF6B35;
+            color: white;
+            padding: 5px 40px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transform: rotate(45deg);
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0066CC;
+            margin-bottom: 1rem;
+        }
+
+        .plan-speed {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF6B35;
+            margin-bottom: 1.5rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            color: #25D366;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .plan-info {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border-left: 4px solid #0066CC;
+        }
+
+        .plan-info h3 {
+            color: #0066CC;
+            margin-bottom: 1rem;
+        }
+
+        .plan-info ul {
+            list-style: none;
+        }
+
+        .plan-info li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 80px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: #0066CC;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #0066CC;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #0066CC;
+        }
+
+        .testimonial-location {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #0066CC;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-method {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .contact-method h3 {
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.8rem;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #FF6B35;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #a0aec0;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .plan-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .plan-card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .promo-banner {
+                padding: 0.8rem 0;
+                margin-top: 70px;
+            }
+
+            .promo-banner h3 {
+                font-size: 1.2rem;
+            }
+
+            .promo-price {
+                font-size: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                gap: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .plans-grid,
+            .features-grid,
+            .testimonials-grid,
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .plan-speed {
+                font-size: 2rem;
+            }
+
+            .plan-price {
+                font-size: 1.8rem;
+            }
+
+            .contact-methods {
+                gap: 1rem;
+            }
+
+            .contact-method {
+                padding: 1.5rem;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .whatsapp-float,
+            header,
+            .cta-buttons {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Brandsen Digital</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#cobertura">Cobertura</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="contact-info">
+                <a href="tel:2223528209" class="phone">📞 2223 52-8209</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Promotion Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h3>🎉 LA FIBRA ÓPTICA QUE ESPERABAS</h3>
+                <div class="promo-price">$29.500 - VALOR FIJO Y REAL</div>
+                <div class="promo-features">TV HD + FÚTBOL + INTERNET • <strong>INSTALACIÓN SIN CARGO</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Fibra óptica en tu hogar</h1>
+                <p>Internet de alta velocidad + TV HD para toda la familia. Más de 25 años conectando a nuestros vecinos en Brandsen.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500</span>
+                        <span class="stat-label">+ Familias Conectadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Días para Instalación</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#planes" class="btn btn-primary">Ver Planes y Precios</a>
+                    <a href="#cobertura" class="btn btn-secondary">Verificar Cobertura</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Check -->
+    <section class="coverage-check" id="cobertura">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Llegamos a tu zona?</h2>
+                <p>Verificá la cobertura en tu barrio y conocé qué velocidades están disponibles</p>
+            </div>
+            
+            <div class="coverage-form">
+                <form>
+                    <div class="form-group">
+                        <label for="localidad">Seleccioná tu localidad:</label>
+                        <select id="localidad" name="localidad">
+                            <option value="">Elegir localidad</option>
+                            <option value="brandsen-centro">Brandsen Centro</option>
+                            <option value="jeppener">Jeppener</option>
+                            <option value="loma-verde">Loma Verde</option>
+                            <option value="gomez">Gómez</option>
+                            <option value="bosquecitos">Bosquecitos</option>
+                            <option value="miralagos">Miralagos</option>
+                            <option value="altamirano">Altamirano</option>
+                            <option value="otro">Otra zona</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Tu dirección:</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="Ej: Mitre 123">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Verificar Cobertura</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="planes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Planes</h2>
+                <p>Elegí el plan perfecto para tu familia o empresa. Todos incluyen Internet + TV HD.</p>
+            </div>
+
+            <div class="plans-grid">
+                <div class="plan-card plan-popular">
+                    <div class="plan-name">Plan 50 Megas</div>
+                    <div class="plan-speed">50 Mbps</div>
+                    <div class="plan-price">$29.500<small>/mes</small></div>
+                    <ul class="plan-features">
+                        <li>Internet por fibra óptica</li>
+                        <li>1 TV HD incluida</li>
+                        <li>Instalación SIN CARGO (promoción)</li>
+                        <li>Valor fijo y real</li>
+                        <li>Soporte técnico local</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Contratar Ahora</a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-name">Plan 100 Megas</div>
+                    <div class="plan-speed">100 Mbps</div>
+                    <div class="plan-price">$33.400<small>/mes</small></div>
+                    <ul class="plan-features">
+                        <li>Internet por fibra óptica</li>
+                        <li>1 TV HD incluida</li>
+                        <li>Ideal para trabajo desde casa</li>
+                        <li>Streaming 4K sin interrupciones</li>
+                        <li>Soporte técnico prioritario</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Contratar Ahora</a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-name">Plan 200 Megas</div>
+                    <div class="plan-speed">200 Mbps</div>
+                    <div class="plan-price">$37.500<small>/mes</small></div>
+                    <ul class="plan-features">
+                        <li>Internet por fibra óptica</li>
+                        <li>1 TV HD incluida</li>
+                        <li>Gaming sin lag</li>
+                        <li>Múltiples dispositivos simultáneos</li>
+                        <li>Ideal para empresas</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Contratar Ahora</a>
+                </div>
+            </div>
+
+            <div class="plan-info">
+                <h3>Información Importante</h3>
+                <ul>
+                    <li><strong>TV Adicionales:</strong> $10.000 instalación + $600/mes por cada TV extra</li>
+                    <li><strong>Instalación:</strong> Consultar importe según tu zona</li>
+                    <li><strong>Demora de instalación:</strong> 15 días hábiles aproximadamente</li>
+                    <li><strong>Facturación:</strong> Comenzás a pagar una vez instalado</li>
+                    <li><strong>Vencimiento:</strong> Del 1 al 15 de cada mes (20% recargo pasada la fecha)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="nosotros">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Por Qué Elegir Brandsen Digital?</h2>
+                <p>Más de 25 años conectando a nuestros vecinos con la mejor tecnología</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Empresa Local</h3>
+                    <p>Más de 25 años conectando a nuestros vecinos. Conocemos cada rincón de Brandsen y las necesidades de nuestra comunidad.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fibra Óptica Real</h3>
+                    <p>Velocidades garantizadas hasta tu hogar. Sin letra chica, sin sorpresas. La tecnología más avanzada llegó a Brandsen.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Soporte Local</h3>
+                    <p>Nuestros técnicos viven en la zona. Respuesta rápida a cualquier problema, porque estamos cerca de vos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Precios Reales</h3>
+                    <p>Valores fijos sin aumentos sorpresa. Lo que ves es lo que pagas. Precios transparentes para toda la familia.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📶</div>
+                    <h3>Cobertura Completa</h3>
+                    <p>Llegamos a Brandsen Centro, Jeppener, Loma Verde, Gómez, Bosquecitos, Miralagos y Altamirano.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📺</div>
+                    <h3>Internet + TV</h3>
+                    <p>Todos nuestros planes incluyen TV HD. Disfrutá del fútbol y tu programación favorita en alta definición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo Que Dicen Nuestros Vecinos</h2>
+                <p>Testimonios reales de familias y empresas de Brandsen que confían en nosotros</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Después de años con internet que se cortaba todo el tiempo, con Brandsen Digital cambió todo. La fibra óptica es súper estable y cuando tengo algún problema, me atienden rápido."</p>
+                    <div class="testimonial-author">María González</div>
+                    <div class="testimonial-location">Brandsen Centro</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Trabajo desde casa y necesitaba una conexión confiable. Con el plan de 100 megas puedo hacer videollamadas sin problemas y los chicos ven Netflix al mismo tiempo."</p>
+                    <div class="testimonial-author">Carlos Rodríguez</div>
+                    <div class="testimonial-location">Loma Verde</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Para nuestro comercio era fundamental tener internet que no falle. Brandsen Digital nos instaló fibra óptica y desde entonces no hemos tenido ni un corte. Son de confianza."</p>
+                    <div class="testimonial-author">Ana Martínez</div>
+                    <div class="testimonial-location">Jeppener</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">¡Contactanos!</h2>
+                <p style="color: rgba(255,255,255,0.9);">Estamos para ayudarte. Elegí el medio que prefieras para comunicarte con nosotros.</p>
+            </div>
+
+            <div class="contact-methods">
+                <div class="contact-method" data-action="phone">
+                    <h3>📞 Teléfono</h3>
+                    <p>2223 52-8209</p>
+                    <p>Lun-Vie 9-17hs | Sáb 9-13hs</p>
+                    <small>Bot automático te deriva según tu consulta</small>
+                </div>
+
+                <div class="contact-method" data-action="whatsapp">
+                    <h3>💬 WhatsApp</h3>
+                    <p>2223 52-8209</p>
+                    <p>Solo mensajes</p>
+                    <small>Respuesta rápida para consultas</small>
+                </div>
+
+                <div class="contact-method">
+                    <h3>📍 Oficina</h3>
+                    <p>Boulevard Mitre 742</p>
+                    <p>Coronel Brandsen, Buenos Aires</p>
+                    <small>Atención presencial en horarios de oficina</small>
+                </div>
+
+                <div class="contact-method" data-action="email">
+                    <h3>✉️ Email</h3>
+                    <p>info@brandsendigital.com.ar</p>
+                    <p>Te respondemos en 24hs</p>
+                    <small>Para consultas comerciales y técnicas</small>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/brandsen.digital" class="social-link" target="_blank" title="Instagram">📷</a>
+                <a href="https://www.facebook.com/BrandsenDigital" class="social-link" target="_blank" title="Facebook">📘</a>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <a href="https://wa.me/5492223528209?text=Hola! Me interesa contratar internet de Brandsen Digital" class="btn btn-primary" style="margin-right: 1rem;" target="_blank">Consultar por WhatsApp</a>
+                <a href="tel:2223528209" class="btn btn-secondary">Llamar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brandsen Digital</h3>
+                    <p>Fibra óptica en tu hogar. Internet + TV HD de calidad para toda la familia brandsenense.</p>
+                    <p>Más de 25 años conectando hogares y empresas en nuestra zona.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <a href="#planes">Internet Fibra Óptica</a>
+                    <a href="#planes">Televisión HD</a>
+                    <a href="#planes">Internet + TV Combo</a>
+                    <a href="#contacto">Soporte Técnico</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cobertura</h3>
+                    <a href="#cobertura">Brandsen Centro</a>
+                    <a href="#cobertura">Jeppener</a>
+                    <a href="#cobertura">Loma Verde</a>
+                    <a href="#cobertura">Gómez</a>
+                    <a href="#cobertura">Bosquecitos</a>
+                    <a href="#cobertura">Miralagos</a>
+                    <a href="#cobertura">Altamirano</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📞 2223 52-8209</p>
+                    <p>📍 Boulevard Mitre 742</p>
+                    <p>📧 info@brandsendigital.com.ar</p>
+                    <p>📷 @brandsen.digital</p>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid #2d3748; padding-top: 2rem; text-align: center; color: #a0aec0;">
+                <p>&copy; 2024 Brandsen Digital. Todos los derechos reservados. | Más de 25 años conectando a nuestros vecinos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5492223528209?text=Hola! Me interesa conocer los planes de internet de Brandsen Digital" 
+       class="whatsapp-float" target="_blank" title="Consultar por WhatsApp">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Coverage form handler
+        const coverageForm = document.querySelector('.coverage-form form');
+        if (coverageForm) {
+            coverageForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const localidad = document.getElementById('localidad').value;
+                const direccion = document.getElementById('direccion').value;
+                
+                if (!localidad) {
+                    alert('Por favor selecciona tu localidad');
+                    return;
+                }
+                
+                // Show coverage result
+                let mensaje = '';
+                let disponible = true;
+                
+                switch(localidad) {
+                    case 'brandsen-centro':
+                    case 'jeppener':
+                    case 'loma-verde':
+                    case 'gomez':
+                    case 'bosquecitos':
+                    case 'miralagos':
+                    case 'altamirano':
+                        mensaje = `¡Excelente! Tenemos cobertura completa en ${localidad.replace('-', ' ')}. Todos nuestros planes están disponibles.`;
+                        break;
+                    case 'otro':
+                        mensaje = `Contáctanos para verificar la cobertura en tu zona. Estamos en constante expansión.`;
+                        disponible = false;
+                        break;
+                    default:
+                        mensaje = `Por favor selecciona una localidad válida.`;
+                        return;
+                }
+                
+                // Create result div
+                const resultDiv = document.createElement('div');
+                resultDiv.style.cssText = `
+                    margin-top: 1rem; 
+                    padding: 1rem; 
+                    border-radius: 10px; 
+                    text-align: center;
+                    ${disponible ? 
+                        'background: #d4edda; color: #155724; border: 1px solid #c3e6cb;' : 
+                        'background: #fff3cd; color: #856404; border: 1px solid #ffeeba;'
+                    }
+                `;
+                resultDiv.innerHTML = `
+                    <p><strong>${mensaje}</strong></p>
+                    ${disponible ? 
+                        '<a href="#contacto" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Solicitar Instalación</a>' :
+                        '<a href="tel:2223528209" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Llamar para Consultar</a>'
+                    }
+                `;
+                
+                // Remove previous result if exists
+                const existingResult = document.querySelector('.coverage-result');
+                if (existingResult) {
+                    existingResult.remove();
+                }
+                
+                resultDiv.className = 'coverage-result';
+                const coverageFormElement = document.querySelector('.coverage-form');
+                if (coverageFormElement) {
+                    coverageFormElement.appendChild(resultDiv);
+                }
+            });
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (header) {
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                    header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.boxShadow = 'none';
+                }
+            }
+        });
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const finalValue = stat.textContent;
+                        const isNumber = !isNaN(finalValue);
+                        
+                        if (isNumber) {
+                            animateNumber(stat, 0, parseInt(finalValue), 2000);
+                        }
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            observer.observe(heroStats);
+        }
+
+        function animateNumber(element, start, end, duration) {
+            const range = end - start;
+            const increment = range / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= end) {
+                    current = end;
+                    clearInterval(timer);
+                }
+                
+                if (end === 500) {
+                    element.textContent = Math.floor(current);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Plan card click handlers
+        document.querySelectorAll('.plan-card .btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const planCard = this.closest('.plan-card');
+                if (planCard) {
+                    const planNameElement = planCard.querySelector('.plan-name');
+                    const planPriceElement = planCard.querySelector('.plan-price');
+                    
+                    if (planNameElement && planPriceElement) {
+                        const planName = planNameElement.textContent;
+                        const planPrice = planPriceElement.textContent;
+                        
+                        // Scroll to contact section
+                        const contactSection = document.getElementById('contacto');
+                        if (contactSection) {
+                            contactSection.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                        
+                        // Highlight the selected plan
+                        planCard.style.transform = 'scale(1.02)';
+                        planCard.style.boxShadow = '0 20px 40px rgba(255, 107, 53, 0.3)';
+                        
+                        setTimeout(() => {
+                            planCard.style.transform = '';
+                            planCard.style.boxShadow = '';
+                        }, 2000);
+                    }
+                }
+            });
+        });
+
+        // Contact method click handlers
+        document.querySelectorAll('.contact-method').forEach(method => {
+            method.addEventListener('click', function() {
+                const action = this.getAttribute('data-action');
+                
+                if (action === 'phone') {
+                    window.open('tel:2223528209');
+                } else if (action === 'whatsapp') {
+                    window.open('https://wa.me/5492223528209?text=Hola! Me interesa conocer más sobre los servicios de Brandsen Digital', '_blank');
+                } else if (action === 'email') {
+                    window.open('mailto:info@brandsendigital.com.ar?subject=Consulta sobre servicios de internet');
+                }
+            });
+        });
+
+        // Mobile menu functionality
+        function createMobileMenu() {
+            if (window.innerWidth <= 768) {
+                const nav = document.querySelector('nav');
+                const navLinks = document.querySelector('.nav-links');
+                
+                if (!document.querySelector('.mobile-menu-btn')) {
+                    const mobileBtn = document.createElement('button');
+                    mobileBtn.innerHTML = '☰';
+                    mobileBtn.className = 'mobile-menu-btn';
+                    mobileBtn.style.cssText = `
+                        display: block;
+                        background: none;
+                        border: none;
+                        font-size: 1.5rem;
+                        color: #0066CC;
+                        cursor: pointer;
+                        padding: 0.5rem;
+                    `;
+                    
+                    mobileBtn.addEventListener('click', () => {
+                        const isVisible = navLinks.style.display === 'flex';
+                        navLinks.style.display = isVisible ? 'none' : 'flex';
+                        
+                        if (!isVisible) {
+                            navLinks.style.flexDirection = 'column';
+                            navLinks.style.position = 'absolute';
+                            navLinks.style.top = '100%';
+                            navLinks.style.left = '0';
+                            navLinks.style.right = '0';
+                            navLinks.style.background = 'white';
+                            navLinks.style.padding = '1rem';
+                            navLinks.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                            navLinks.style.zIndex = '1000';
+                        }
+                        
+                        mobileBtn.innerHTML = isVisible ? '☰' : '✕';
+                    });
+                    
+                    // Close mobile menu when clicking on a link
+                    navLinks.querySelectorAll('a').forEach(link => {
+                        link.addEventListener('click', () => {
+                            navLinks.style.display = 'none';
+                            mobileBtn.innerHTML = '☰';
+                        });
+                    });
+                    
+                    nav.appendChild(mobileBtn);
+                }
+            } else {
+                // Remove mobile menu button on larger screens
+                const mobileBtn = document.querySelector('.mobile-menu-btn');
+                if (mobileBtn) {
+                    mobileBtn.remove();
+                }
+                
+                const navLinks = document.querySelector('.nav-links');
+                if (navLinks) {
+                    navLinks.style.display = 'flex';
+                    navLinks.style.position = 'static';
+                    navLinks.style.flexDirection = 'row';
+                    navLinks.style.background = 'none';
+                    navLinks.style.padding = '0';
+                    navLinks.style.boxShadow = 'none';
+                }
+            }
+        }
+
+        // Initialize mobile menu
+        createMobileMenu();
+        window.addEventListener('resize', createMobileMenu);
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.querySelector('nav');
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileBtn && navLinks && !nav.contains(e.target)) {
+                navLinks.style.display = 'none';
+                mobileBtn.innerHTML = '☰';
+            }
+        });
+
+        // Performance optimization
+        if ('IntersectionObserver' in window) {
+            const sections = document.querySelectorAll('section');
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                if (!section.classList.contains('promo-banner') && !section.classList.contains('hero')) {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(20px)';
+                    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    sectionObserver.observe(section);
+                }
+            });
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- SEO Enhancement -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Brandsen Digital",
+        "description": "Proveedor de internet por fibra óptica y televisión HD en Coronel Brandsen",
+        "url": "https://brandsendigital.com.ar",
+        "telephone": "+54-2223-528209",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Boulevard Mitre 742",
+            "addressLocality": "Coronel Brandsen",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-35.1695",
+            "longitude": "-58.2231"
+        },
+        "openingHours": [
+            "Mo-Fr 09:00-17:00",
+            "Sa 09:00-13:00"
+        ],
+        "priceRange": "$29500-$37500",
+        "areaServed": [
+            "Coronel Brandsen",
+            "Jeppener",
+            "Loma Verde",
+            "Gómez",
+            "Bosquecitos",
+            "Miralagos",
+            "Altamirano"
+        ],
+        "serviceType": "Internet Service Provider",
+        "sameAs": [
+            "https://www.instagram.com/brandsen.digital",
+            "https://www.facebook.com/BrandsenDigital"
+        ]
+    }
+    </script>
+</body>
+</html>
